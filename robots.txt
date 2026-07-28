@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vira-suzukigadingserpong.com/sitemap.xml
+Sitemap: https://vira-suzukigadingserpong.com/images-sitemap.xml
