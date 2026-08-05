@@ -101,9 +101,9 @@
         }
         .harga-overlay.active { display:flex; }
         .harga-overlay img { max-width:92%; max-height:92vh; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.6); }
-        .promo-slider { position:relative; max-width:92%; max-height:92vh; overflow:hidden; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.6); }
-        .promo-slider .slide { display:none; width:100%; max-height:92vh; object-fit:contain; }
-        .promo-slider .slide.active { display:block; }
+        .promo-slider { position:relative; max-width:92%; max-height:92vh; overflow:hidden; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.6); min-height:200px; }
+        .promo-slider .slide { position:absolute; top:0; left:0; width:100%; max-height:92vh; object-fit:contain; opacity:0; transition:opacity .8s ease; }
+        .promo-slider .slide.active { opacity:1; }
         .promo-slider .slide-btn { position:absolute; top:50%; transform:translateY(-50%); z-index:2; background:rgba(0,0,0,.5); color:#fff; border:none; width:40px; height:40px; font-size:1.2rem; cursor:pointer; border-radius:50%; }
         .promo-slider .slide-btn.prev { left:10px; }
         .promo-slider .slide-btn.next { right:10px; }
@@ -608,12 +608,16 @@
     <div class="harga-overlay" id="hargaOverlay">
         <span class="close-harga" onclick="document.getElementById('hargaOverlay').classList.remove('active')">×</span>
         <div class="promo-slider">
-            <img class="slide active" src="assets/img/newPromo.jpeg" alt="Daftar Harga Lengkap Promo Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-spesial-suzuki-gadingserpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-spesial-suzuki-gading-serpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-lebaran-suzuki-gading-serpong.png" alt="Promo Lebaran Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-kemerdekaan.jpg" alt="Promo Kemerdekaan Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-akhir-tahun.jpeg" alt="Promo Akhir Tahun Suzuki Gading Serpong">
+            <img class="slide active" src="assets/img/promo-kemerdekaan.jpg" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
+            <img class="slide" src="assets/img/newPromo.jpeg" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan • Free Aksesoris • Cicilan Ringan">
+            <img class="slide" src="assets/img/promo-spesial-suzuki-gadingserpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Dealer Resmi Suzuki Tangerang dan BSD">
+            <img class="slide" src="assets/img/promo-spesial-suzuki-gading-serpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Promo DP Ringan Mobil Suzuki 2026">
+            <img class="slide" src="assets/img/promo-lebaran-suzuki-gading-serpong.png" alt="Promo Lebaran Suzuki Gading Serpong" data-title="Promo Lebaran Suzuki Gading Serpong" data-tag="Penawaran Spesial Hari Raya Idul Fitri">
+            <img class="slide" src="assets/img/promo-lebaran-suzuki.png" alt="Promo Lebaran Suzuki Gading Serpong" data-title="Promo Lebaran Suzuki Gading Serpong" data-tag="Promo Mobil Suzuki Lebaran 2026">
+            <img class="slide" src="assets/img/promo-akhir-tahun.jpeg" alt="Promo Akhir Tahun Suzuki Gading Serpong" data-title="Promo Akhir Tahun Suzuki Gading Serpong" data-tag="Penawaran Terbaik Akhir Tahun 2026">
+            <img class="slide" src="assets/img/promo-juni.png" alt="Promo Juni Suzuki Gading Serpong" data-title="Promo Juni Suzuki Gading Serpong" data-tag="Promo Spesial Bulan Juni Suzuki Gading Serpong">
+            <img class="slide" src="assets/img/suzuki-gading-serpong-edisi-promo.jpeg" alt="Edisi Promo Suzuki Gading Serpong" data-title="Edisi Promo Suzuki Gading Serpong" data-tag="Promo Terbaru Dealer Resmi Suzuki Tangerang">
+            <img class="slide" src="assets/img/Valentine Promo Suzuki Gading Serpong.png" alt="Valentine Promo Suzuki Gading Serpong" data-title="Valentine Promo Suzuki Gading Serpong" data-tag="Promo Spesial Valentine Day Suzuki">
             <button class="slide-btn prev">&#10094;</button>
             <button class="slide-btn next">&#10095;</button>
         </div>
@@ -622,17 +626,21 @@
     <div class="promo-popup" id="promoPopup">
         <div class="popup-close" onclick="hidePromo()">×</div>
         <div class="promo-slider">
-            <img class="slide active" src="assets/img/newPromo.jpeg" alt="Promo Akhir Tahun 2026 Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-spesial-suzuki-gadingserpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-spesial-suzuki-gading-serpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-lebaran-suzuki-gading-serpong.png" alt="Promo Lebaran Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-kemerdekaan.jpg" alt="Promo Kemerdekaan Suzuki Gading Serpong">
-            <img class="slide" src="assets/img/promo-akhir-tahun.jpeg" alt="Promo Akhir Tahun Suzuki Gading Serpong">
+            <img class="slide active" src="assets/img/promo-kemerdekaan.jpg" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
+            <img class="slide" src="assets/img/newPromo.jpeg" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan • Free Aksesoris • Cicilan Ringan">
+            <img class="slide" src="assets/img/promo-spesial-suzuki-gadingserpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Dealer Resmi Suzuki Tangerang dan BSD">
+            <img class="slide" src="assets/img/promo-spesial-suzuki-gading-serpong.jpeg" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Promo DP Ringan Mobil Suzuki 2026">
+            <img class="slide" src="assets/img/promo-lebaran-suzuki-gading-serpong.png" alt="Promo Lebaran Suzuki Gading Serpong" data-title="Promo Lebaran Suzuki Gading Serpong" data-tag="Penawaran Spesial Hari Raya Idul Fitri">
+            <img class="slide" src="assets/img/promo-lebaran-suzuki.png" alt="Promo Lebaran Suzuki Gading Serpong" data-title="Promo Lebaran Suzuki Gading Serpong" data-tag="Promo Mobil Suzuki Lebaran 2026">
+            <img class="slide" src="assets/img/promo-akhir-tahun.jpeg" alt="Promo Akhir Tahun Suzuki Gading Serpong" data-title="Promo Akhir Tahun Suzuki Gading Serpong" data-tag="Penawaran Terbaik Akhir Tahun 2026">
+            <img class="slide" src="assets/img/promo-juni.png" alt="Promo Juni Suzuki Gading Serpong" data-title="Promo Juni Suzuki Gading Serpong" data-tag="Promo Spesial Bulan Juni Suzuki Gading Serpong">
+            <img class="slide" src="assets/img/suzuki-gading-serpong-edisi-promo.jpeg" alt="Edisi Promo Suzuki Gading Serpong" data-title="Edisi Promo Suzuki Gading Serpong" data-tag="Promo Terbaru Dealer Resmi Suzuki Tangerang">
+            <img class="slide" src="assets/img/Valentine Promo Suzuki Gading Serpong.png" alt="Valentine Promo Suzuki Gading Serpong" data-title="Valentine Promo Suzuki Gading Serpong" data-tag="Promo Spesial Valentine Day Suzuki">
             <button class="slide-btn prev">&#10094;</button>
             <button class="slide-btn next">&#10095;</button>
         </div>
         <div class="popup-footer">
-            <p><strong>Promo Suzuki Gading Serpong 2026</strong><br>DP Ringan • Free Aksesoris • Cicilan Ringan</p>
+            <p><strong id="promoTitle">Promo Suzuki Gading Serpong 2026</strong><br><span id="promoTag">DP Ringan • Free Aksesoris • Cicilan Ringan</span></p>
             <a href="https://wa.me/6281286156361?text=Halo%20Kak%20Vira,%20saya%20tertarik%20Promo%20Suzuki%20VIN%202026" target="_blank" class="btn-book">BOOK NOW</a>
         </div>
     </div>
@@ -645,23 +653,48 @@
         function initPromoSlider(el){
             var slides = el.querySelectorAll('.slide');
             var idx = 0;
+            slides.forEach(function(s, i) { if (s.classList.contains('active')) idx = i; });
+            var inPopup = !!el.closest('#promoPopup');
             var dotsWrap = document.createElement('div');
             dotsWrap.className = 'slide-dots';
             slides.forEach(function(s, i) {
                 var d = document.createElement('span');
-                if (i === 0) d.classList.add('active');
+                if (i === idx) d.classList.add('active');
                 d.addEventListener('click', function(){ go(i); });
                 dotsWrap.appendChild(d);
             });
             el.appendChild(dotsWrap);
+            function updateText(){
+                if (!inPopup) return;
+                var t = document.getElementById('promoTitle');
+                var g = document.getElementById('promoTag');
+                if (t) t.textContent = slides[idx].getAttribute('data-title') || t.textContent;
+                if (g) g.textContent = slides[idx].getAttribute('data-tag') || g.textContent;
+            }
             function go(n){
                 idx = (n + slides.length) % slides.length;
                 slides.forEach(function(s, i) { s.classList.toggle('active', i === idx); });
                 dotsWrap.querySelectorAll('span').forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+                updateText();
             }
             el.querySelector('.slide-btn.prev').addEventListener('click', function(){ go(idx - 1); });
             el.querySelector('.slide-btn.next').addEventListener('click', function(){ go(idx + 1); });
             setInterval(function(){ go(idx + 1); }, 4000);
+            syncPromoSliderHeight(el);
+            window.addEventListener('resize', function(){ syncPromoSliderHeight(el); });
+            window.addEventListener('load', function(){ syncPromoSliderHeight(el); });
+            updateText();
+        }
+        function syncPromoSliderHeight(el){
+            var w = el.clientWidth;
+            if (!w) return;
+            var h = 0;
+            el.querySelectorAll('.slide').forEach(function(img){
+                if (img.naturalWidth && img.naturalHeight) {
+                    h = Math.max(h, w * img.naturalHeight / img.naturalWidth);
+                }
+            });
+            if (h) el.style.height = h + 'px';
         }
         document.querySelectorAll('.promo-slider').forEach(initPromoSlider);
     </script>
