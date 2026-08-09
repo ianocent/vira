@@ -118,4 +118,55 @@
       <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
     </image:image>
   </url>
+  <url>
+    <loc>https://vira-suzukigadingserpong.com/spesifikasi/</loc>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/grand-vitara.jpg</image:loc>
+      <image:title>Spesifikasi Suzuki Grand Vitara Tangerang Vira</image:title>
+      <image:caption>Data teknis Grand Vitara mild hybrid dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/suzuki-xl7.jpg</image:loc>
+      <image:title>Spesifikasi Suzuki XL7 Tangerang Vira</image:title>
+      <image:caption>Data teknis XL7 SUV 7 seater dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/suzuki-ertiga.jpg</image:loc>
+      <image:title>Spesifikasi Suzuki Ertiga Hybrid Tangerang Vira</image:title>
+      <image:caption>Data teknis Ertiga Hybrid SHVS dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/suzuki-fronx.jpg</image:loc>
+      <image:title>Spesifikasi Suzuki Fronx Tangerang Vira</image:title>
+      <image:caption>Data teknis Fronx turbo dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/s-presso.jpg</image:loc>
+      <image:title>Spesifikasi Suzuki S-Presso Tangerang Vira</image:title>
+      <image:caption>Data teknis S-Presso city car dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/carry-pickup.jpg</image:loc>
+      <image:title>Spesifikasi New Carry Pick Up Tangerang Vira</image:title>
+      <image:caption>Data teknis Carry Pick Up niaga dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/vira-apv-gadingserpong.webp</image:loc>
+      <image:title>Spesifikasi New APV Tangerang Vira</image:title>
+      <image:caption>Data teknis APV MPV dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://vira-suzukigadingserpong.com/assets/img/jimny.png</image:loc>
+      <image:title>Spesifikasi Suzuki Jimny Tangerang Vira</image:title>
+      <image:caption>Data teknis Jimny 4x4 dari sales Vira</image:caption>
+      <image:geo_location>Tangerang, Banten, Indonesia</image:geo_location>
+    </image:image>
+  </url>
 </urlset>
