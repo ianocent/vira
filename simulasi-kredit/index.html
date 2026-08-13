@@ -18,7 +18,7 @@
 
     <meta name="keywords" content="sales cantik suzuki simulasi, sales suzuki terpercaya kredit, harga suzuki ertiga terbaru, suzuki xl7 harga otr, harga otr suzuki gading serpong, simulasi kredit suzuki gading serpong, dp ringan, harga murah" />
 
-    <meta name="geo.region" content="ID-BTN" />
+    <meta name="geo.region" content="ID-BT" />
     <meta name="geo.placename" content="Tangerang, Banten" />
     <meta name="geo.position" content="-6.248887;106.623416" />
     <meta name="ICBM" content="-6.248887, 106.623416" />
@@ -280,7 +280,7 @@
 
     <section class="contact section" id="simulasi-kredit">
         <div class="container">
-            <h2 class="section__title">Simulasi Kredit Suzuki Gading Serpong</h2>
+            <h1 class="section__title">Simulasi Kredit Suzuki Gading Serpong</h1>
             <p class="section__subtitle">Isi form di bawah ini untuk mendapatkan simulasi kredit personal via WhatsApp. Cepat & Gratis! (Estimasi DP ringan mulai 5 jutaan)</p>
     
             <div class="contact__grid" style="max-width: 600px; margin: 0 auto;">
@@ -497,21 +497,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
     <script>
-        var mixer = mixitup('#promo-container', {
+        var promoContainer = document.getElementById('promo-container');
+        var mixer = promoContainer ? mixitup(promoContainer, {
             selectors: {
                 target: '.mix'
             },
             animation: {
                 duration: 400
             }
-        });
+        }) : null;
 
         document.querySelectorAll('.filter__item').forEach(item => {
             item.addEventListener('click', function() {
                 document.querySelector('.filter__item.active').classList.remove('active');
                 this.classList.add('active');
                 const filterValue = this.getAttribute('data-filter');
-                mixer.filter(filterValue === 'all' ? 'all' : '.' + filterValue);
+                if (mixer) mixer.filter(filterValue === 'all' ? 'all' : '.' + filterValue);
             });
         });
 
