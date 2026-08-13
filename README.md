@@ -54,7 +54,7 @@ Buka setiap hari 08.00 – 20.00 WIB
 
 ---
 **Keyword pencarian populer:**  
-suzuki gading serpong, dealer suzuki gading serpong, promosuzuki, suzuki carry pickup, new xl7, suzuki bsd, promo suzuki 2026, ertiga hybrid gading serpong, xl7 gading serpong, jimny 5 pintu tangerang, carry pickup murah, kredit suzuki dp ringan, suzuki grand vitara tangerang, suzuki fronx tangerang
+suzuki gading serpong, dealer suzuki gading serpong, promo suzuki, suzuki carry pickup, new xl7, promo suzuki 2026, ertiga hybrid gading serpong, xl7 gading serpong, jimny 5 pintu tangerang, carry pickup murah, kredit suzuki dp ringan, suzuki grand vitara tangerang, suzuki fronx tangerang
 
 © 2026 Suzuki Gading Serpong Tangerang – PT. Buana Indomobil Trada  
 "Selangkah Lebih Dekat Dengan Mobil Impian Anda"
