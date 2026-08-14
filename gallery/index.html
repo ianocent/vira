@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8" />
@@ -310,15 +310,15 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Suzuki Gading Serpong - PT. Buana Indomobil Trada</p>
-            <p class="quote">“Selangkah Lebih Dekat Dengan Mobil Impian Anda”</p>
+            <p class="quote">â€œSelangkah Lebih Dekat Dengan Mobil Impian Andaâ€</p>
         </div>
     </footer>
 
     <div class="harga-overlay" id="hargaOverlay">
-        <span class="close-harga" onclick="document.getElementById('hargaOverlay').classList.remove('active')">×</span>
+        <span class="close-harga" onclick="document.getElementById('hargaOverlay').classList.remove('active')">Ã—</span>
         <div class="promo-slider">
             <img loading="lazy" class="slide active" src="../assets/img/promo-kemerdekaan.webp" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
-            <img loading="lazy" class="slide" src="../assets/img/newPromo.webp" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan • Free Aksesoris • Cicilan Ringan">
+            <img loading="lazy" class="slide" src="../assets/img/newPromo.webp" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan â€¢ Free Aksesoris â€¢ Cicilan Ringan">
             <img loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gadingserpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Dealer Resmi Suzuki Gading Serpong Tangerang">
             <img loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gading-serpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Promo DP Ringan Mobil Suzuki 2026">
             <img loading="lazy" class="slide" src="../assets/img/promo-lebaran-suzuki-gading-serpong.webp" alt="Promo Lebaran Suzuki Gading Serpong" data-title="Promo Lebaran Suzuki Gading Serpong" data-tag="Penawaran Spesial Hari Raya Idul Fitri">
@@ -333,10 +333,10 @@
     </div>
 
     <div class="promo-popup" id="promoPopup">
-        <div class="popup-close" onclick="hidePromo()">×</div>
+        <div class="popup-close" onclick="hidePromo()">Ã—</div>
         <div class="promo-slider">
             <img loading="lazy" class="slide active" src="../assets/img/promo-kemerdekaan.webp" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
-            <img loading="lazy" class="slide" src="../assets/img/newPromo.webp" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan • Free Aksesoris • Cicilan Ringan">
+            <img loading="lazy" class="slide" src="../assets/img/newPromo.webp" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan â€¢ Free Aksesoris â€¢ Cicilan Ringan">
             <img loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gadingserpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Dealer Resmi Suzuki Gading Serpong Tangerang">
             <img loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gading-serpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Promo DP Ringan Mobil Suzuki 2026">
             <img loading="lazy" class="slide" src="../assets/img/promo-lebaran-suzuki-gading-serpong.webp" alt="Promo Lebaran Suzuki Gading Serpong" data-title="Promo Lebaran Suzuki Gading Serpong" data-tag="Penawaran Spesial Hari Raya Idul Fitri">
@@ -349,7 +349,7 @@
             <button class="slide-btn next">&#10095;</button>
         </div>
         <div class="popup-footer">
-            <p><strong id="promoTitle">Promo Suzuki Gading Serpong 2026</strong><br><span id="promoTag">DP Ringan • Free Aksesoris • Cicilan Ringan</span></p>
+            <p><strong id="promoTitle">Promo Suzuki Gading Serpong 2026</strong><br><span id="promoTag">DP Ringan â€¢ Free Aksesoris â€¢ Cicilan Ringan</span></p>
             <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20suzukinya" target="_blank" class="btn-book">BOOK NOW</a>
         </div>
     </div>
@@ -522,7 +522,18 @@
         "name": "Dealer Resmi Suzuki Gading Serpong",
         "image": "https://vira-suzukigadingserpong.com/assets/img/logosuzuki.webp",
         "url": "https://vira-suzukigadingserpong.com/",
-        "telephone": ["+6281286156361", "+628138246131"],
+        "telephone": [
+        {
+            "@type": "ContactPoint",
+            "telephone": "+6281286156361",
+            "contactType": "sales"
+        },
+        {
+            "@type": "ContactPoint",
+            "telephone": "+628138246131",
+            "contactType": "sales"
+        }
+        ],
         "priceRange": "Rp 150.000.000 - Rp 500.000.000",
         "address": {
         "@type": "PostalAddress",
@@ -566,7 +577,7 @@
         {
             "@type": "City",
             "name": "Kelapa Dua"
-        },
+        }
 
 ],"sameAs": [
         "https://www.instagram.com/vira_suzukigds/",

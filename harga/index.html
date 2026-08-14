@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8" />
@@ -118,7 +118,7 @@
     <section class="page">
         <div class="container">
             <h1 class="section__title">Harga OTR &amp; Simulasi Kredit Suzuki Gading Serpong 2026</h1>
-            <p class="section__subtitle">Angka indikatif. Penawaran final minta langsung ke Vira — gratis, transparan, tanpa paksaan.</p>
+            <p class="section__subtitle">Angka indikatif. Penawaran final minta langsung ke Vira â€” gratis, transparan, tanpa paksaan.</p>
 
             <div style="overflow-x:auto;">
                 <table class="price-table">
@@ -146,15 +146,15 @@
             <div class="calc">
                 <label for="cModel">Pilih Model (isi otomatis)</label>
                 <select id="cModel" onchange="setModel(this.value)">
-                    <option value="">— pilih model —</option>
-                    <option value="150000000">S-Presso (OTR ±150 jt)</option>
-                    <option value="130000000">New Carry Pick Up (OTR ±130 jt)</option>
-                    <option value="240000000">Fronx (OTR ±240 jt)</option>
-                    <option value="230000000">Ertiga Hybrid (OTR ±230 jt)</option>
-                    <option value="250000000">XL-7 (OTR ±250 jt)</option>
-                    <option value="350000000">Grand Vitara (OTR ±350 jt)</option>
-                    <option value="160000000">APV (OTR ±160 jt)</option>
-                    <option value="400000000">Jimny (OTR ±400 jt)</option>
+                    <option value="">â€” pilih model â€”</option>
+                    <option value="150000000">S-Presso (OTR Â±150 jt)</option>
+                    <option value="130000000">New Carry Pick Up (OTR Â±130 jt)</option>
+                    <option value="240000000">Fronx (OTR Â±240 jt)</option>
+                    <option value="230000000">Ertiga Hybrid (OTR Â±230 jt)</option>
+                    <option value="250000000">XL-7 (OTR Â±250 jt)</option>
+                    <option value="350000000">Grand Vitara (OTR Â±350 jt)</option>
+                    <option value="160000000">APV (OTR Â±160 jt)</option>
+                    <option value="400000000">Jimny (OTR Â±400 jt)</option>
                 </select>
 
                 <label for="cOtr">Harga OTR (Rp)</label>
@@ -187,7 +187,7 @@
     <section class="cta-band">
         <div class="container">
             <h2>Angka Final? Chat Vira, Dihitung Ulang di Depan Kamu</h2>
-            <p>DP, cicilan, tenor — semua transparan sebelum tanda tangan.</p>
+            <p>DP, cicilan, tenor â€” semua transparan sebelum tanda tangan.</p>
             <div class="cta-links">
                 <a class="btn-light" href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20suzukinya" target="_blank" rel="noopener">Minta Perhitungan Kredit</a>
                 <a class="btn-ghost" href="/promo/">Lihat Promo</a>
@@ -198,7 +198,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Suzuki Gading Serpong - PT. Buana Indomobil Trada</p>
-            <p class="quote">“Selangkah Lebih Dekat Dengan Mobil Impian Anda”</p>
+            <p class="quote">â€œSelangkah Lebih Dekat Dengan Mobil Impian Andaâ€</p>
         </div>
     </footer>
 
@@ -222,7 +222,7 @@
             var out = document.getElementById('cOut');
             out.innerHTML = 'Uang Muka: ' + rupiah(dp) + '<br>' +
                 'Total Pembiayaan: ' + rupiah(total) + '<br>' +
-                'Angsuran per Bulan (±): ' + rupiah(Math.round(angsuran));
+                'Angsuran per Bulan (Â±): ' + rupiah(Math.round(angsuran));
             out.classList.add('show');
         }
     </script>
@@ -234,7 +234,18 @@
         "name": "Dealer Resmi Suzuki Gading Serpong",
         "image": "https://vira-suzukigadingserpong.com/assets/img/vira-apv-gadingserpong.webp",
         "url": "https://vira-suzukigadingserpong.com/",
-        "telephone": ["+6281286156361", "+628138246131"],
+        "telephone": [
+        {
+            "@type": "ContactPoint",
+            "telephone": "+6281286156361",
+            "contactType": "sales"
+        },
+        {
+            "@type": "ContactPoint",
+            "telephone": "+628138246131",
+            "contactType": "sales"
+        }
+        ],
         "priceRange": "Rp 150.000.000 - Rp 500.000.000",
         "address": {
             "@type": "PostalAddress",
@@ -272,7 +283,7 @@
         {
             "@type": "City",
             "name": "Kelapa Dua"
-        },
+        }
 
 ],"sameAs": [
             "https://www.instagram.com/vira_suzukigds/",
