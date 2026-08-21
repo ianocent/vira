@@ -66,305 +66,8 @@
 
         .home { padding:140px 0 100px; background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)), url('assets/img/background.webp') center/cover no-repeat; color:#fff; text-align:center; }
         .home__title { font-size:3.6rem; margin-bottom:.5rem; }
-        .home__tagline { font-size:1.9rem; font-weight:600; margin:2rem 0; }
-        .button { padding:14px 34px; border-radius:50px; font-weight:600; text-decoration:none; margin:10px; display:inline-block; transition:.3s; }
-        .button--primary { background:var(--primary); color:#fff; }
-        .button--secondary { border:2px solid #fff; color:#fff; }
-        .button:hover { transform:translateY(-4px); box-shadow:0 10px 20px rgba(0,0,0,.3); }
-
-        .section__title { font-size:2.6rem; text-align:center; margin-bottom:1rem; color:var(--dark); }
-        .section__subtitle { text-align:center; color:var(--gray); margin-bottom:3rem; }
-
-        .promo { background:#fafafa; }
-        .promo__filters { display:flex; justify-content:center; gap:16px; margin-bottom:50px; flex-wrap:wrap; }
-        .filter__item { padding:12px 28px; background:#eee; border-radius:50px; cursor:pointer; font-weight:500; transition:.3s; }
-        .filter__item.active { background:var(--primary); color:#fff; }
-        .filter__item:hover:not(.active) { background:#ddd; }
-        .promo__grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:32px; }
-        .promo__card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 12px 35px rgba(0,0,0,.1); transition:.4s; }
-        .promo__card:hover { transform:translateY(-12px); }
-        .card__image img { width:100%; height:100%; object-fit:cover; }
-        .card__content { padding:22px; }
-        .card__header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
-        .card__header h3 { font-size:1.38rem; color:#222; }
-        .badge { padding:6px 14px; border-radius:50px; font-size:0.82rem; font-weight:600; }
-        .badge--best { background:#28a745; color:#fff; }
-        .badge--populer { background:#ffc107; color:#000; }
-        .badge--promo { background:#e91e63; color:#fff; }
-        .price { font-size:1.7rem; font-weight:700; color:var(--primary); margin:12px 0; }
-        .variant { color:var(--gray); font-size:0.95rem; margin-bottom:18px; }
-        .btn-whatsapp { display:flex; align-items:center; justify-content:center; gap:10px; background:#3caf66; color:#fff; padding:13px 24px; border-radius:50px; text-decoration:none; font-weight:600; transition:.3s; }
-        .btn-whatsapp:hover { background:#128c7e; }
-
-        .harga { padding:100px 0; background:#fff; text-align:center; }
-        .harga-thumb { max-width:460px; margin:30px auto; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,.2); cursor:pointer; transition:.4s; }
-        .harga-thumb:hover { transform:scale(1.04); }
-
-        .harga-overlay {
-            display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;
-        }
-        .harga-overlay.active { display:flex; }
-        .harga-overlay img { max-width:92%; max-height:92vh; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.6); }
-        .promo-slider { position:relative; max-width:92%; max-height:92vh; overflow:hidden; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.6); min-height:200px; }
-        .promo-slider .slide { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain; opacity:0; transition:opacity .8s ease; }
-        .promo-slider .slide.active { opacity:1; }
-        .promo-slider .slide-btn { position:absolute; top:50%; transform:translateY(-50%); z-index:2; background:rgba(0,0,0,.5); color:#fff; border:none; width:40px; height:40px; font-size:1.2rem; cursor:pointer; border-radius:50%; }
-        .promo-slider .slide-btn.prev { left:10px; }
-        .promo-slider .slide-btn.next { right:10px; }
-        .promo-slider .slide-dots { position:absolute; bottom:10px; left:0; right:0; display:flex; justify-content:center; gap:8px; z-index:2; }
-        .promo-slider .slide-dots span { width:10px; height:10px; border-radius:50%; background:rgba(255,255,255,.5); cursor:pointer; }
-        .promo-slider .slide-dots span.active { background:#fff; }
-        .promo-popup .promo-slider { max-width:100%; max-height:55vh; border-radius:0; box-shadow:none; }
-        .promo-popup .promo-slider .slide { position:static; width:100%; height:100%; object-fit:contain; opacity:1; display:none; }
-        .promo-popup .promo-slider .slide.active { display:block; }
-        .close-harga { position:absolute; top:20px; right:30px; z-index:20; color:#fff; font-size:3rem; cursor:pointer; font-weight:bold; }
-
-        .promo-popup {
-            position:fixed; bottom:20px; right:20px; width:320px; max-width:88vw; max-height:80vh; background:#1a1a1a; border-radius:20px; overflow:hidden;
-            box-shadow:0 20px 50px rgba(0,0,0,.4); z-index:9998; animation:slideUp .6s ease-out; display:flex; flex-direction:column;
-        }
-        .promo-popup img { width:100%; display:block; }
-        .popup-close { position:absolute; top:12px; right:12px; z-index:20; width:36px; height:36px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; cursor:pointer; font-weight:bold; }
-        .popup-footer { padding:18px; text-align:center; background:linear-gradient(135deg,#ff5f6d,#ffc371); color:#fff; }
-        .btn-book { display:inline-block; background:#fff; color:#c0392b; padding:12px 28px; border-radius:50px; text-decoration:none; font-weight:700; box-shadow:0 4px 15px rgba(0,0,0,.2); }
-        .btn-book:hover { transform:scale(1.05); }
-
-        .promo-trigger {
-            position:fixed; bottom:20px; right:20px; background:var(--primary); color:#fff; padding:14px 20px; border-radius:50px;
-            cursor:pointer; box-shadow:0 8px 25px rgba(0,0,0,.3); z-index:9997; font-weight:600; display:none; align-items:center; gap:8px;
-        }
-        .promo-trigger.show { display:flex; }
-        .promo-trigger:hover { background:#55a8a8; }
-
-        @keyframes slideUp { from { transform:translateY(100px); opacity:0; } to { transform:translateY(0); opacity:1; } }
-
-        .contact { padding:110px 0; background:#f8f8f8; }
-        .contact__grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:40px; }
-        .contact__item { background:#fff; padding:32px; border-radius:18px; text-align:center; box-shadow:0 12px 35px rgba(0,0,0,.1); }
-        .contact__item i { font-size:3.2rem; color:var(--primary); margin-bottom:20px; }
-        .footer { background:var(--dark); color:#fff; text-align:center; padding:50px 0; }
-
-        @media (max-width:480px) {
-            .promo-popup, .promo-trigger { width:94vw; right:3%; bottom:10px; }
-            .harga-thumb { max-width:340px; }
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            html {
-                scroll-behavior: smooth;
-            }
-        }
-        @media (max-width: 768px) {
-        .home { padding: 120px 0 80px; }
-        .home__title { font-size: 2.6rem; }
-        .home__tagline { font-size: 1.5rem; }
-
-        .section__title { font-size: 2.1rem; }
-        
-        .nav__list { 
-            gap: 1rem; 
-            font-size: 0.95rem;
-        }
-
-        .nav {
-            flex-wrap: wrap;
-            padding: 0 10px;
-        }
-        .nav__logo {
-            font-size: 1.3rem;
-        }
-        .nav__logo img {
-            width: 28px;
-            height: 28px;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .container { width: 95%; padding: 0 10px; }
-
-        .home__title { font-size: 2.3rem; }
-        .home__tagline { font-size: 1.35rem; }
-
-        .button {
-            padding: 12px 24px;
-            font-size: 0.95rem;
-            margin: 8px;
-        }
-
-        .promo__filters {
-            gap: 10px;
-        }
-        .filter__item {
-            padding: 10px 20px;
-            font-size: 0.9rem;
-        }
-
-        .promo__grid {
-            gap: 24px;
-        }
-        .card__image {
-            height: 200px;
-        }
-        .card__image img {
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .card__content {
-            padding: 18px;
-        }
-        .card__header h3 {
-            font-size: 1.25rem;
-        }
-        .price {
-            font-size: 1.5rem;
-        }
-
-        /* Contact section */
-        .contact__item {
-            padding: 24px;
-        }
-        .contact__item i {
-            font-size: 2.6rem;
-        }
-
-        .promo-popup,
-        .promo-trigger {
-            width: 92vw;
-            right: 4vw;
-            bottom: 15px;
-        }
-        .promo-trigger {
-            padding: 12px 18px;
-            font-size: 0.95rem;
-        }
-    }
-
-    @media (max-width: 380px) {
-        .home__title { font-size: 2rem; }
-        .home__tagline { font-size: 1.25rem; }
-        .button { 
-            display: block; 
-            width: 80%;
-            margin: 10px auto;
-        }
-        .nav__list {
-            font-size: 0.88rem;
-            gap: 0.8rem;
-        }
-    }
-
-    section {
-        scroll-margin-top: 90px;
-    }
-    
-    .social-icons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2.5rem 3rem;
-            margin-bottom: 4rem;
-        }
-
-        .social-link {
-            text-decoration: none;
-            color: var(--white);
-            transition: transform 0.3s, color 0.3s;
-            text-align: center;
-        }
-
-        .social-link:hover {
-            transform: translateY(-8px);
-        }
-
-        .icon-circle {
-            width: 90px;
-            height: 90px;
-            background: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 3.2rem;
-            transition: background 0.3s;
-        }
-
-        .social-link:hover .icon-circle {
-            background: var(--red);
-        }
-
-        .platform-name {
-            font-size: 1.3rem;
-            font-weight: 700;
-            display: block;
-            margin-bottom: 0.4rem;
-        }
-
-        .follow-text {
-            font-size: 0.95rem;
-            color: var(--gray);
-        }
-
-        .social-cta {
-            margin-top: 2rem;
-        }
-
-        .social-cta p {
-            font-size: 1.2rem;
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .social-icons {
-                gap: 2rem;
-            }
-            .icon-circle {
-                width: 80px;
-                height: 80px;
-                font-size: 2.8rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <div class="container nav">
-            <a href="/" class="nav__logo"><i class='bx '><img loading="lazy" src="assets/img/logosuzuki.webp" alt="Logo Suzuki" style="width: 30px; height: 30px; padding-top: 5px;"></i> Suzuki Gading Serpong</a>
-            <ul class="nav__list">
-                <li><a href="/" class="nav__link active">Beranda</a></li>
-                <li><a href="/promo/" class="nav__link">Promo</a></li>
-                <li><a href="/harga/" class="nav__link">Harga OTR</a></li>
-                <li><a href="/contact/" class="nav__link">Kontak</a></li>
-                <li><a href="/gallery/" class="nav__link">Galeri</a></li>
-                <li><a href="/simulasi-kredit/" class="nav__link">Simulasi</a></li>
-                <li><a href="/spesifikasi/" class="nav__link">Spesifikasi</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <section class="home section" id="home">
-        <div class="container">
-            <h1 class="home__title">Dealer Resmi Suzuki Gading Serpong</h1>
-            <p class="home__subtitle">PT. Buana Indomobil Trada</p>
-            <p class="home__tagline">“Selangkah Lebih Dekat Dengan Mobil Impian Anda”</p>
-            <div>
-                <a href="#promo" class="button button--primary">Lihat Promo</a>
-                <a href="#kontak" class="button button--secondary">Hubungi Sales</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="promo section" id="promo">
-        <div class="container">
-            <h2 class="section__title">Promo Spesial Suzuki Gading Serpong</h2>
-            <p class="section__subtitle">Pilih mobil impian dengan harga terbaik</p>
-
+        </style>
+        <p class="home__tagline">"Selangkah Lebih Dekat Dengan Mobil Impian Anda"</p><p class="home__tagline">"Selangkah Lebih Dekat Dengan Mobil Impian Anda"</p>
             <div class="promo__filters">
                 <span class="filter__item active" data-filter="all">Semua</span>
                 <span class="filter__item" data-filter="best">Best Seller</span>
@@ -379,7 +82,7 @@
                     </div>
                     <div class="card__content">
                         <div class="card__header">
-                            <h3>New Carry Pick Up</h3>
+                            <h3>🚚 New Carry Pick Up - Badak Niaga</h3>
                             <span class="badge badge--best">Best Seller</span>
                         </div>
 
@@ -391,7 +94,7 @@
                         <p class="variant">• Cash & Credit</p>
 
                         <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20New%20Carry%20Pick%20Up%20nya" target="_blank" class="btn-whatsapp">
-                            <i class='bx bxl-whatsapp'></i> Tanya Sekarang
+                            <i class='bx bxl-whatsapp'></i> Cek Harga & DP Sekarang
                         </a>
                     </div>
                 </article>
@@ -414,7 +117,7 @@
                         <p class="variant">• Cash & Credit</p>
 
                         <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20S-Presso%20nya" target="_blank" class="btn-whatsapp">
-                            <i class='bx bxl-whatsapp'></i> Tanya Sekarang
+                            <i class='bx bxl-whatsapp'></i> Cek Harga & DP Sekarang
                         </a>
                     </div>
                 </article>
@@ -436,7 +139,7 @@
                         <p class="variant">• Cash & Credit</p>
 
                         <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20Fronx%20nya" target="_blank" class="btn-whatsapp">
-                            <i class='bx bxl-whatsapp'></i> Tanya Sekarang
+                            <i class='bx bxl-whatsapp'></i> Cek Harga & DP Sekarang
                         </a>
                     </div>
                 </article>
@@ -459,7 +162,7 @@
                         <p class="variant">• Cash & Credit</p>
 
                         <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20Jimny%20nya" target="_blank" class="btn-whatsapp">
-                            <i class='bx bxl-whatsapp'></i> Tanya Sekarang
+                            <i class='bx bxl-whatsapp'></i> Cek Harga & DP Sekarang
                         </a>
                     </div>
                 </article>
@@ -481,7 +184,7 @@
                         <p class="variant">• Cash & Credit</p>
 
                         <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20Grand%20Vitara%20nya" target="_blank" class="btn-whatsapp">
-                            <i class='bx bxl-whatsapp'></i> Tanya Sekarang
+                            <i class='bx bxl-whatsapp'></i> Cek Harga & DP Sekarang
                         </a>
                     </div>
                 </article>
@@ -503,7 +206,7 @@
                         <p class="variant">• Cash & Credit</p>
                         
                         <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20XL-7%20nya" target="_blank" class="btn-whatsapp">
-                            <i class='bx bxl-whatsapp'></i> Tanya Sekarang
+                            <i class='bx bxl-whatsapp'></i> Cek Harga & DP Sekarang
                         </a>
                     </div>
                 </article>
@@ -524,7 +227,7 @@
                         <p class="variant">• Cash & Credit</p>
 
                         <a href="https://wa.me/6281286156361?text=hallo%20kak%20Vira%2C%20mau%20tanya%20untuk%20unit%20APV%20nya" target="_blank" class="btn-whatsapp">
-                            <i class='bx bxl-whatsapp'></i> Tanya Sekarang
+                            <i class='bx bxl-whatsapp'></i> Cek Harga & DP Sekarang
                         </a>
                     </div>
                 </article>
