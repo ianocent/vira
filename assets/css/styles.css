@@ -235,6 +235,7 @@ body.light-theme{
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: .4s;
+  padding-top: env(safe-area-inset-top, 0);
 }
 
 .nav{
@@ -1237,4 +1238,68 @@ body.light-theme{
     color: black;
   }
 
+}
+
+/* ============================================================
+   MOBILE SAFE- AREA & SPACING FIXES
+   Mengatasi header dipotong dan mobile terlalu padet.
+   ============================================================ */
+
+@media screen and (max-width: 768px) {
+  html {
+    padding-top: env(safe-area-inset-top, 0);
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  .header {
+    padding-top: calc(3.5rem + env(safe-area-inset-top, 0));
+  }
+
+  .nav {
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav__menu {
+    padding: 1rem 1.25rem;
+  }
+
+  .home__handle {
+    width: 140px;
+    height: 230px;
+  }
+
+  .home__img {
+    width: 110px;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__box {
+    column-gap: 0.75rem;
+  }
+
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+
+  .services__container {
+    grid-template-columns: 130px;
+    justify-content: center;
+  }
+
+  .work__item {
+    font-size: var(--small-font-size);
+  }
+
+  .work__filters {
+    column-gap: 0.25rem;
+  }
 }
