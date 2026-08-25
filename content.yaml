@@ -1,0 +1,65 @@
+# content.yaml — sumber data katalog Vira Shalim
+# Edit angka promo/harga DI SINI saja, lalu jalankan: python shared/build.py vira
+sales: Vira Shalim
+domain: vira-suzukigadingserpong.com
+wa: "6281286156361"
+area: Gading Serpong
+repo: git@github.com:ianocent/vira.git
+
+tema:
+  prefix_css: ""
+  alt_area: Tangerang
+
+kalkulator:
+  bunga_flat_default_pct: 5
+  tenor_bulan: [12, 24, 36, 48, 60, 72]
+
+models:
+  - nama: New Carry Pick Up
+    otr: 130000000
+    dp_mulai: 5000000
+    tenor_teks: "1-6 tahun"
+    catatan: Truk usaha serbaguna
+    img: ../assets/img/carry-pickup.webp
+  - nama: S-Presso
+    otr: 150000000
+    dp_mulai: 8000000
+    tenor_teks: "1-6 tahun"
+    catatan: Ramah kantong pertama
+    img: ../assets/img/s-presso.webp
+  - nama: Fronx
+    otr: 240000000
+    dp_mulai: 20000000
+    tenor_teks: "1-6 tahun"
+    catatan: Tampilan sporty bold
+    img: ../assets/img/suzuki-fronx.webp
+  - nama: Ertiga Hybrid
+    otr: 230000000
+    dp_mulai: 25000000
+    tenor_teks: "1-6 tahun"
+    catatan: SHVS irit bensin
+    img: ../assets/img/suzuki-ertiga.webp
+  - nama: XL-7
+    otr: 250000000
+    dp_mulai: 30000000
+    tenor_teks: "1-6 tahun"
+    catatan: Jok captain premium
+    img: ../assets/img/suzuki-xl7.webp
+  - nama: Grand Vitara
+    otr: 350000000
+    dp_mulai: 10000000
+    tenor_teks: "1-6 tahun"
+    catatan: Panoramic roof hybrid
+    img: ../assets/img/grand-vitara.webp
+  - nama: APV
+    otr: 160000000
+    dp_mulai: 5000000
+    tenor_teks: "1-6 tahun"
+    catatan: Andalan keluarga besar
+    img: ../assets/img/vira-apv-gadingserpong.webp
+  - nama: Jimny
+    otr: 400000000
+    dp_mulai: null
+    tenor_teks: Konsultasi
+    catatan: Off-road icon 4x4
+    img: ../assets/img/jimny.webp
