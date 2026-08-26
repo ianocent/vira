@@ -119,12 +119,15 @@
         border-radius: 50%;
         justify-content: center;
         align-items: center;
+        gap: 0; /* label teks jadi flex item kosong - tanpa ini icon bergeser kiri */
+        line-height: 1;
         font-size: 0; /* sembunyikan label teks */
         box-shadow: 0 10px 26px rgba(199,67,67,.5);
     }
     .promo-trigger i.bx {
         font-size: 1.75rem;
         margin: 0;
+        line-height: 1;
         pointer-events: none;
     }
 
