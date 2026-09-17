@@ -48,8 +48,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' media="print" onload="this.media='all'">
+    <noscript><link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></noscript>
 
     <style>
         :root {
@@ -501,7 +503,7 @@
     <div class="harga-overlay" id="hargaOverlay">
         <span class="close-harga" onclick="document.getElementById('hargaOverlay').classList.remove('active')"><i class='bx bx-x'></i></span>
         <div class="promo-slider">
-            <img width="800" height="400" loading="lazy" class="slide" src="../assets/img/promo-kemerdekaan.webp" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
+            <img width="800" height="400" loading="eager" fetchpriority="high" class="slide active" src="../assets/img/promo-kemerdekaan.webp" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
             <img loading="lazy" class="slide" src="../assets/img/newPromo.webp" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan • Free Aksesoris • Cicilan Ringan">
             <img width="800" height="400" loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gadingserpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Dealer Resmi Suzuki Gading Serpong Tangerang">
             <img width="800" height="400" loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gading-serpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Promo DP Ringan Mobil Suzuki 2026">
@@ -519,7 +521,7 @@
     <div class="promo-popup" id="promoPopup">
         <div class="popup-close" onclick="hidePromo()"><i class='bx bx-x'></i></div>
         <div class="promo-slider">
-            <img width="800" height="400" loading="lazy" class="slide" src="../assets/img/promo-kemerdekaan.webp" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
+            <img width="800" height="400" loading="eager" fetchpriority="high" class="slide active" src="../assets/img/promo-kemerdekaan.webp" alt="Promo Kemerdekaan Suzuki Gading Serpong" data-title="Promo Kemerdekaan Suzuki Gading Serpong" data-tag="Rayakan 17 Agustus dengan Promo Spesial Suzuki">
             <img loading="lazy" class="slide" src="../assets/img/newPromo.webp" alt="Promo Suzuki Gading Serpong 2026" data-title="Promo Suzuki Gading Serpong 2026" data-tag="DP Ringan • Free Aksesoris • Cicilan Ringan">
             <img width="800" height="400" loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gadingserpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Dealer Resmi Suzuki Gading Serpong Tangerang">
             <img width="800" height="400" loading="lazy" class="slide" src="../assets/img/promo-spesial-suzuki-gading-serpong.webp" alt="Promo Spesial Suzuki Gading Serpong" data-title="Promo Spesial Suzuki Gading Serpong" data-tag="Promo DP Ringan Mobil Suzuki 2026">
@@ -592,7 +594,7 @@
         document.querySelectorAll('.promo-slider').forEach(initPromoSlider);
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js" defer></script>
     <script>
         var mixer = mixitup('#promo-container', {
             selectors: {
