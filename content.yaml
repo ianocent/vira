@@ -47,7 +47,7 @@ models:
     img: ../assets/img/suzuki-xl7.webp
   - nama: Grand Vitara
     otr: 350000000
-    dp_mulai: 10000000
+    dp_mulai: 70000000
     tenor_teks: "1-6 tahun"
     catatan: Panoramic roof hybrid
     img: ../assets/img/grand-vitara.webp

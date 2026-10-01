@@ -1,3 +1,13 @@
+:root {
+    /* Fallback token. style.css lama (Poppins) sudah dihapus.
+       Dideklarasikan ulang supaya dock tetap rapi kalau styles.css gagal. */
+    --v-red: #c74343;
+    --v-red-soft: #fdf2f2;
+    --v-ink: #1a1a1a;
+    --v-cream: #f5c518;
+    --v-wa: #25d366;
+}
+
 /* ============================================================
    MODE APLIKASI MOBILE - Vira Suzuki Gading Serpong
    Semua aturan DIKUNCI di dalam media query.
@@ -100,14 +110,14 @@
         gap: 6px;
         padding: 12px 4px;
         text-decoration: none;
-        color: var(--dark);
+        color: var(--v-ink);
         font-size: .68rem;
         font-weight: 600;
         border-radius: 12px;
         text-align: center;
     }
-    .nav__drop a i.bx { font-size: 1.4rem; line-height: 1; color: var(--primary); }
-    .nav__drop a.v-on { background: var(--light); color: var(--primary); }
+    .nav__drop a i.bx { font-size: 1.4rem; line-height: 1; color: var(--v-red); }
+    .nav__drop a.v-on { background: var(--v-red-soft); color: var(--v-red); }
 
     /* --- tombol promo jadi FAB kado bulat (icon only) --- */
     .promo-trigger {
@@ -163,13 +173,13 @@
     }
     .v-appbar a i.bx { font-size: 1.35rem; line-height: 1; transition: transform .15s ease; }
     .v-appbar a:active i.bx { transform: scale(.88); }
-    .v-appbar a.v-on { color: var(--primary); }
+    .v-appbar a.v-on { color: var(--v-red); }
     .v-appbar a.v-on::before {
         content: "";
         position: absolute;
         top: 0; width: 34px; height: 3px;
         border-radius: 0 0 4px 4px;
-        background: var(--primary);
+        background: var(--v-red);
     }
 
     /* slot WA tengah menonjol */
@@ -177,10 +187,23 @@
     .v-appbar a.v-wa i.bx {
         width: 46px; height: 46px;
         margin-top: -26px;
-        background: linear-gradient(135deg,#25d366,#128c7e);
+        background: linear-gradient(135deg,#25d366,#0f7a6e);
         border-radius: 50%;
         display: grid; place-items: center;
         font-size: 1.5rem; color: #fff;
         box-shadow: 0 8px 18px rgba(37,211,102,.45), 0 0 0 5px rgba(255,255,255,.92);
     }
+}
+
+/* ============================================================
+   A11Y — fokus terlihat + hormati reduced motion
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+    }
+    .v-appbar a i.bx { transition: none; }
 }

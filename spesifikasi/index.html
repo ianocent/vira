@@ -43,75 +43,14 @@
 
     <meta name="google-site-verification" content="gso8LGeeAhzVonB09ZYq0PQZOcu2CU7M05oWY5lladQ" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <style>
-        :root {
-            --cr: #c74343;
-            --cr-dark: #a83232;
-            --dark: #1a1a1a;
-            --gray: #666;
-            --line: #e8e2dc;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Poppins', sans-serif; line-height:1.65; color:#333; background:#fdfbf8; }
-        .container { width:90%; max-width:1150px; margin:0 auto; padding:0 15px; }
-        img { max-width:100%; display:block; }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
-        .header { background:var(--dark); padding:1rem 0; position:fixed; width:100%; top:0; z-index:1000; box-shadow:0 4px 15px rgba(0,0,0,.2); }
-        .nav { display:flex; justify-content:space-between; align-items:center; color:#fff; }
-        .nav__logo { font-size:1.5rem; font-weight:700; color:#fff; text-decoration:none; }
-        .nav__logo i { color:var(--primary); }
-        .nav__list { display:flex; gap:2rem; list-style:none; }
-        .nav__link { color:#fff; text-decoration:none; font-weight:500; transition:.3s; }
-        .nav__link:hover, .nav__link.active { color:var(--cr); }
-
-        .vs-hero { background:linear-gradient(115deg, #1a1a1a 20%, #2d0f0f 70%, var(--cr) 130%); color:#fff; padding:9rem 0 5rem; }
-        .vs-hero h1 { font-size:clamp(1.7rem, 3.4vw, 2.6rem); font-weight:700; line-height:1.25; margin-bottom:.9rem; }
-        .vs-hero p { color:#d8c9c0; font-size:.98rem; max-width:60ch; }
-        .vs-hero .vs-tag { display:inline-block; background:rgba(199,67,67,.18); border:1px solid rgba(255,255,255,.25); padding:.35rem 1rem; border-radius:999px; font-size:.78rem; font-weight:600; letter-spacing:.06em; margin-bottom:1.1rem; text-transform:uppercase; }
-
-        .vs-chips { display:flex; gap:.6rem; flex-wrap:wrap; padding:1.2rem 0 .4rem; }
-        .vs-chips a { border:1px solid var(--line); background:#fff; color:var(--ink); padding:.45rem 1.05rem; border-radius:999px; font-size:.84rem; font-weight:600; text-decoration:none; transition:.25s; }
-        .vs-chips a:hover { border-color:var(--cr); color:var(--cr); }
-
-        .vs-list { display:grid; grid-template-columns:1fr; gap:1.6rem; padding:1.8rem 0 3rem; }
-        .vs-card { background:#fff; border:1px solid var(--line); border-radius:18px; padding:1.5rem 1.6rem; display:grid; grid-template-columns:200px 1fr; gap:1.6rem; align-items:start; box-shadow:0 6px 22px rgba(26,26,26,.05); }
-        .vs-card img { width:200px; height:130px; object-fit:cover; border-radius:14px; }
-        .vs-card h3 { font-size:1.25rem; font-weight:700; color:var(--dark); margin-bottom:.2rem; }
-        .vs-card small { color:var(--gray); font-size:.85rem; display:block; margin-bottom:1rem; }
-        .vs-grid { display:grid; grid-template-columns:1fr 1fr; gap:.45rem .9rem; font-size:.9rem; }
-        .vs-grid div { padding:.5rem .7rem; border-bottom:1px dashed var(--line); }
-        .vs-grid b { color:var(--dark); font-weight:600; }
-        .vs-bonus { grid-column:1 / -1; margin-top:.9rem; background:#fbf6f0; border:1px dashed #dfc9b4; border-radius:14px; padding:1rem 1.2rem; }
-        .vs-bonus b { color:var(--cr); font-size:.84rem; text-transform:uppercase; letter-spacing:.07em; display:block; margin-bottom:.5rem; }
-        .vs-bonus ul { list-style:none; display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; font-size:.88rem; color:#4a4a4a; }
-        .vs-bonus ul li::before { content:"✓ "; color:var(--cr); font-weight:700; }
-        .vs-note { font-size:.76rem; color:var(--gray); margin-top:.55rem; }
-
-        .vs-cta { background:var(--dark); color:#fff; text-align:center; padding:3rem 0; }
-        .vs-cta h2 { font-size:clamp(1.35rem, 2.6vw, 1.9rem); margin-bottom:.6rem; }
-        .vs-cta p { color:#c9a; font-size:.92rem; margin-bottom:1.4rem; }
-        .vs-btn { display:inline-block; background:var(--cr); color:#fff; text-decoration:none; font-weight:600; padding:.85rem 2.1rem; border-radius:999px; transition:.3s; margin:0 .3rem; }
-        .vs-btn:hover { transform:translateY(-3px); box-shadow:0 10px 20px rgba(199,67,43,.35); }
-        .vs-btn--ghost { background:transparent; border:2px solid #fff; }
-
-        .vs-foot { background:#111; color:#9a9a9a; text-align:center; padding:1.6rem 0; font-size:.84rem; }
-        .vs-wa { position:fixed; right:22px; bottom:22px; background:#25d366; color:#fff; width:56px; height:56px; border-radius:50%; display:grid; place-items:center; font-size:1.8rem; box-shadow:0 10px 24px rgba(0,0,0,.3); z-index:999; }
-        .vs-wa:hover { transform:scale(1.08); }
-
-        @media (max-width: 850px) {
-            .vs-card { grid-template-columns:1fr; }
-            .vs-card img { width:100%; height:auto; max-height:220px; }
-            .vs-grid { grid-template-columns:1fr; }
-            .vs-bonus { grid-column:auto; }
-            .nav__list { gap:.9rem; }
-            .vs-hero { padding-top:11rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/app-mobile.css">
 </head>
 <body><!--GTM_NOSCRIPT_MARKER-->
